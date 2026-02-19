@@ -1,0 +1,31 @@
+{
+  "metadata" : {
+    "name" : "pipeline_1.DataStage sequence job",
+    "asset_id" : "07f117c4-b57d-42f8-b5fc-e83de2a46f69",
+    "owner_id" : "1000331001",
+    "version" : 2
+  },
+  "entity" : {
+    "job" : {
+      "schedule_id" : "",
+      "project_name" : "mdproject",
+      "configuration" : {
+        "env_id" : "f1bc064f-37e8-473b-83c2-c2a8453d090f",
+        "version" : "",
+        "env_type" : "data_intg_flow",
+        "sub_type" : "",
+        "pipeline_id" : "dfbade3d-b629-45a0-ac31-b411058a1b46",
+        "env_variables" : [ ]
+      },
+      "last_run_time" : "deprecated field",
+      "asset_ref_type" : "data_intg_flow",
+      "last_run_status" : "deprecated field",
+      "last_run_initiator" : "deprecated field",
+      "schedule_creator_id" : "",
+      "enable_notifications" : true,
+      "future_scheduled_runs" : [ ],
+      "last_run_status_timestamp" : 0,
+      "flow_name" : "pipeline_1"
+    }
+  }
+}

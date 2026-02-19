@@ -1,0 +1,289 @@
+{
+  "primary_pipeline" : "dc62fa3f-028a-492c-9c86-78fbd2c72bc3",
+  "pipelines" : [ {
+    "nodes" : [ {
+      "outputs" : [ {
+        "id" : "",
+        "app_data" : {
+          "ui_data" : {
+            "label" : "outPort",
+            "cardinality" : {
+              "min" : 0,
+              "max" : 2147483647
+            }
+          }
+        },
+        "parameters" : {
+          "outputName" : "Link_2"
+        }
+      } ],
+      "op" : "JDBCConnectorPX",
+      "inputs" : [ {
+        "links" : [ {
+          "node_id_ref" : "c1a56123-ce31-495a-af89-983477b29bab",
+          "type_attr" : "PRIMARY",
+          "id" : "d25585df-16b1-474a-8c48-e1bd2f9bdfcd",
+          "app_data" : {
+            "datastage" : { },
+            "ui_data" : {
+              "decorations" : [ {
+                "image" : "/data-intg/flows/graphics/flows/link-output-handle--default-selected.svg",
+                "temporary" : false,
+                "outline" : false,
+                "distance" : 0,
+                "x_pos" : -10,
+                "id" : "dec-3",
+                "position" : "source",
+                "y_pos" : -10,
+                "class_name" : "linkStartImage"
+              }, {
+                "image" : "/data-intg/flows/graphics/flows/link-marking--specific-partitioning.svg",
+                "temporary" : false,
+                "outline" : false,
+                "distance" : 0,
+                "width" : 50,
+                "tooltip" : "Specific partition",
+                "x_pos" : -15,
+                "id" : "dec-9C",
+                "position" : "middle",
+                "y_pos" : 4,
+                "height" : 50
+              }, {
+                "temporary" : false,
+                "label_single_line" : true,
+                "label_align" : "center",
+                "tooltip" : "Link_2",
+                "x_pos" : 0,
+                "label" : "Link_2",
+                "label_allow_return_key" : "save",
+                "width" : 97,
+                "label_editable" : true,
+                "id" : "dec-8",
+                "position" : "middle",
+                "y_pos" : -20,
+                "height" : 20
+              } ],
+              "class_name" : "undefined"
+            }
+          },
+          "link_name" : "Link_2",
+          "port_id_ref" : "c6de4e02-dcb9-42c9-b056-4541b853e563"
+        } ],
+        "id" : "288f9946-1522-4deb-be1e-2ab0c51399d8",
+        "app_data" : {
+          "ui_data" : {
+            "label" : "inPort",
+            "cardinality" : {
+              "min" : 0,
+              "max" : 2147483647
+            }
+          }
+        },
+        "schema_ref" : "eb148cf4-4b35-4ee7-aecb-ef50d8a39ea5",
+        "parameters" : {
+          "runtime_column_propagation" : 0
+        }
+      } ],
+      "connection" : {
+        "ref" : "local",
+        "properties" : {
+          "currentOutputLinkType" : "PRIMARY",
+          "_session.default_length_for_columns" : 200,
+          "_session.batch_size" : 2000,
+          "_transaction.isolation_level" : "default",
+          "outputAcpShouldHide" : false,
+          "_session.keep_conductor_connection_alive" : true,
+          "_transaction.begin_end" : false,
+          "ssl" : false,
+          "inputName" : "Link_2",
+          "node_number" : 0,
+          "_write_mode" : "insert",
+          "InputlinkOrderingList" : [ {
+            "link_label" : "0",
+            "link_name" : "Link_2"
+          } ],
+          "_session.drop_unmatched_fields" : false,
+          "jar_uris" : "/ds-storage/athena/athena-jdbc-3.7.0-with-dependencies.jar",
+          "_session.character_set_for_non_unicode_columns" : "default",
+          "jdbc_driver" : "com.amazon.athena.jdbc.AthenaDriver",
+          "catalog_support" : false,
+          "heap_size" : 256,
+          "node_count" : 1,
+          "_sql.insert_statement.read_from_file_insert" : false,
+          "_table_action" : "append",
+          "_transaction.autocommit_mode" : "disable",
+          "showPartType" : true,
+          "_transaction.record_count" : 2000,
+          "_session.fail_on_truncation" : true,
+          "showCollType" : false,
+          "enableFlowAcpControl" : true,
+          "_enable_quoted_i_ds" : false,
+          "part_type" : "auto",
+          "jdbc_url" : "jdbc:athena://WorkGroup=#aws_keys.ATHENA_WORKGROUP#;Region=#aws_keys.AWS_REGION#;User=#aws_keys.AWS_ACCESS_KEY#;Password=#aws_keys.AWS_SECRET_KEY#;Database=#aws_keys.ATHENA_DATABASE#;OutputLocation=s3://#aws_keys.S3_BUCKET#/athena-results/;",
+          "showSortOptions" : false,
+          "_generate_sql" : false,
+          "_before_after" : false,
+          "_use_datastage" : true,
+          "_session.default_length_for_long_columns" : 20000
+        }
+      },
+      "id" : "b4af1f64-e543-4491-b549-23592797b2fa",
+      "type" : "binding",
+      "app_data" : {
+        "datastage" : {
+          "inputs_order" : "288f9946-1522-4deb-be1e-2ab0c51399d8",
+          "outputs_order" : ""
+        },
+        "ui_data" : {
+          "image" : "/data-intg/flows/graphics/palette/JDBCConnectorPX.svg",
+          "x_pos" : 285.12,
+          "label" : "Generic_JDBC_1",
+          "y_pos" : 79.2
+        }
+      },
+      "parameters" : {
+        "combinability" : "auto",
+        "inputcolProperties" : [ {
+          "Unicode" : false,
+          "Description" : "",
+          "Signed" : true,
+          "Metadata" : "CHAR(100)",
+          "Scale" : 0,
+          "TimeScale" : 0,
+          "OldColumnName" : "COLUMN_1",
+          "TempOldColumnName" : "COLUMN_1",
+          "ColumnName" : "COLUMN_1",
+          "Length" : 100,
+          "DataType" : "CHAR",
+          "Key" : false,
+          "Nullable" : false
+        } ],
+        "InputlinkOrderingList" : [ {
+          "link_label" : "0",
+          "link_name" : "Link_2"
+        } ],
+        "output_count" : 0,
+        "input_count" : 1,
+        "execmode" : "default_par"
+      }
+    }, {
+      "outputs" : [ {
+        "id" : "c6de4e02-dcb9-42c9-b056-4541b853e563",
+        "app_data" : {
+          "datastage" : {
+            "is_source_of_link" : "d25585df-16b1-474a-8c48-e1bd2f9bdfcd"
+          },
+          "ui_data" : {
+            "label" : "outPort",
+            "cardinality" : {
+              "min" : 1,
+              "max" : 1
+            }
+          },
+          "additionalProperties" : {
+            "enableAcp" : true
+          }
+        },
+        "schema_ref" : "eb148cf4-4b35-4ee7-aecb-ef50d8a39ea5",
+        "parameters" : {
+          "records" : 10,
+          "buf_mode" : "default",
+          "enableSchemalessDesign" : false
+        }
+      } ],
+      "op" : "PxRowGenerator",
+      "id" : "c1a56123-ce31-495a-af89-983477b29bab",
+      "type" : "binding",
+      "app_data" : {
+        "ui_data" : {
+          "image" : "/data-intg/flows/graphics/palette/PxRowGenerator.svg",
+          "x_pos" : 79.2,
+          "label" : "Row_Generator_1",
+          "y_pos" : 79.2
+        }
+      },
+      "parameters" : {
+        "combinability" : "auto",
+        "output_count" : 1,
+        "input_count" : 0,
+        "execmode" : "default_seq",
+        "preserve" : -3
+      }
+    } ],
+    "description" : "",
+    "id" : "dc62fa3f-028a-492c-9c86-78fbd2c72bc3",
+    "app_data" : {
+      "datastage" : {
+        "nls_map_name" : "UTF-8",
+        "nls_locale" : "OFF"
+      },
+      "ui_data" : {
+        "comments" : [ ]
+      }
+    },
+    "runtime_ref" : "pxOsh"
+  } ],
+  "external_paramsets" : [ {
+    "ref" : "fb27f466-33bf-4830-bd3f-5274f9843ef3",
+    "name" : "aws_keys",
+    "description" : ""
+  } ],
+  "json_schema" : "https://api.dataplatform.ibm.com/schemas/common-pipeline/pipeline-flow/pipeline-flow-v3-schema.json",
+  "schemas" : [ {
+    "id" : "eb148cf4-4b35-4ee7-aecb-ef50d8a39ea5",
+    "fields" : [ {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 100,
+        "decimal_scale" : 0,
+        "decimal_precision" : 0,
+        "description" : "",
+        "max_length" : 100,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "COLUMN_1",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "CHAR",
+        "is_unicode_string" : false,
+        "type_code" : "STRING"
+      },
+      "type" : "string"
+    } ]
+  } ],
+  "doc_type" : "pipeline",
+  "id" : "6b0095de-0859-47e9-91ce-43e9b2469871",
+  "app_data" : {
+    "datastage" : {
+      "timestamp_format" : "%yyyy-%mm-%dd %hh:%nn:%ss",
+      "decimal_separator" : ".",
+      "flowRunPriorityQueue" : "Medium",
+      "time_format" : "%hh:%nn:%ss",
+      "external_message_handlers" : [ ],
+      "date_format" : "%yyyy-%mm-%dd",
+      "message_handlers" : [ ],
+      "version" : "3.0.5"
+    },
+    "additionalProperties" : {
+      "transInputLinkMapper" : { },
+      "ELTDropdown" : {
+        "id" : "nesting",
+        "label" : "Generate nested SQL",
+        "value" : "NESTED_QUERY"
+      },
+      "disableParamsCacheOnFlow" : false,
+      "rcpLinkList" : [ ],
+      "globalAcp" : true,
+      "enableRCP" : false,
+      "isNewTransActive" : false,
+      "enableSchemaLessDesign" : false,
+      "runMode" : "ETL"
+    }
+  },
+  "version" : "3.0",
+  "parameters" : {
+    "local_parameters" : [ ]
+  }
+}

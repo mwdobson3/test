@@ -1,0 +1,50 @@
+{
+  "parameter_set" : {
+    "value_sets" : [ ],
+    "name" : "aws_keys",
+    "description" : "",
+    "parameters" : [ {
+      "subtype" : "",
+      "name" : "AWS_ACCESS_KEY",
+      "description" : "",
+      "type" : "encrypted",
+      "prompt" : "",
+      "value" : "{dsmenc}5h8CCRveTLON4umlXPfGsbVT0/NyfOGWdCoWdvpK2ObxvEgAxZ4o65UvVTblkMNt3WLCNAoK2X8DtFXoMllFpg=="
+    }, {
+      "subtype" : "",
+      "name" : "AWS_SECRET_KEY",
+      "description" : "",
+      "type" : "encrypted",
+      "prompt" : "",
+      "value" : "{dsmenc}+2S5gNl1AxU6vvsf60RHogX9wSNJLkQl5iL/EgyjzA/RWkAnHY7Zp/ZueePwjhT5IfkN59Sjsvz2/x85mtQkbbmnE3qhG4vbgnF4wSmqh0o="
+    }, {
+      "subtype" : "",
+      "name" : "AWS_REGION",
+      "description" : "",
+      "type" : "string",
+      "prompt" : "",
+      "value" : "us-east-1"
+    }, {
+      "subtype" : "",
+      "name" : "S3_BUCKET",
+      "description" : "",
+      "type" : "string",
+      "prompt" : "",
+      "value" : "datastage-athena-test"
+    }, {
+      "subtype" : "",
+      "name" : "ATHENA_DATABASE",
+      "description" : "",
+      "type" : "string",
+      "prompt" : "",
+      "value" : "default"
+    }, {
+      "subtype" : "",
+      "name" : "ATHENA_WORKGROUP",
+      "description" : "",
+      "type" : "string",
+      "prompt" : "",
+      "value" : "primary"
+    } ]
+  }
+}

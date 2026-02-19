@@ -1,0 +1,24 @@
+{
+  "datasource_type" : "cfdcb449-1204-44ba-baa6-9a8a878e6aa7",
+  "name" : "Data Fabric Trial - Db2 Warehouse",
+  "rov" : {
+    "mode" : 0,
+    "member_roles" : {
+      "1000331001" : {
+        "roles" : [ "OWNER" ],
+        "user_iam_id" : "1000331001"
+      }
+    }
+  },
+  "properties" : {
+    "database" : "BLUDB",
+    "password" : "{dsmenc}qnK5v2edliAW0lSF0mmtcTquYy9M0fiaX3WVih4HLBI=",
+    "auth_method" : "username_password",
+    "port" : "50001",
+    "host" : "{dsmenc}QyfeQh2AWvXYUgk9MRrDPSQX3eolvAeu9V+yYMAO9cGYWUemm/im4FAtX4m9HRDb",
+    "ssl" : "true",
+    "username" : "{dsmenc}j2UZIIvyt0msu2Po2vFe/g=="
+  },
+  "data_source_definition_searchable" : "db2w-ruggyab.us-south.db2w.cloud.ibm.com|50001|BLUDB",
+  "origin_country" : "us"
+}

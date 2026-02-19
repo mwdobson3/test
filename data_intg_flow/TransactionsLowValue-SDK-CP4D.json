@@ -1,0 +1,1148 @@
+{
+  "primary_pipeline" : "84b7378f-1ece-41fe-b8a2-6bf362e476ab",
+  "pipelines" : [ {
+    "nodes" : [ {
+      "outputs" : [ {
+        "id" : "b7ece432-9f6b-4dff-961e-b478c149207b",
+        "app_data" : {
+          "datastage" : {
+            "is_source_of_link" : "90a7eb42-cb18-4f83-b9fb-76dfe4d8747f"
+          },
+          "ui_data" : {
+            "label" : "outPort",
+            "cardinality" : {
+              "min" : 0,
+              "max" : 1
+            }
+          }
+        },
+        "schema_ref" : "e91c3b93-c24d-46d8-90e5-6ffd8fe02463",
+        "parameters" : { }
+      } ],
+      "op" : "postgresql",
+      "connection" : {
+        "ref" : "local",
+        "name" : "PostgreSQL_conn",
+        "app_data" : { },
+        "properties" : {
+          "currentOutputLinkType" : "PRIMARY",
+          "outputAcpShouldHide" : true,
+          "enableFlowAcpControl" : true,
+          "enableSchemalessDesign" : false,
+          "table_name" : "transactions",
+          "ssl" : false,
+          "proxy" : false,
+          "database" : "cpd",
+          "password" : "DataDuck!",
+          "output_count" : 1,
+          "port" : "5432",
+          "input_count" : 0,
+          "name" : "PostgreSQL_conn",
+          "host" : "52.116.198.152",
+          "runtime_column_propagation" : false,
+          "defer_credentials" : false,
+          "username" : "cpd"
+        }
+      },
+      "id" : "17da14d1-3d74-456f-b613-41c89e4aaee6",
+      "type" : "binding",
+      "app_data" : {
+        "ui_data" : {
+          "image" : "/data-intg/flows/graphics/palette/postgresql.svg",
+          "resize_height" : 48.0,
+          "is_resized" : true,
+          "x_pos" : 56.0,
+          "label" : "transactions_1",
+          "y_pos" : 400.0,
+          "resize_width" : 48.0
+        }
+      },
+      "parameters" : {
+        "output_count" : 1,
+        "input_count" : 0,
+        "buf_free_run" : 50,
+        "queue_upper_size" : 0,
+        "max_mem_buf_size" : 3145728,
+        "disk_write_inc" : 1048576
+      }
+    }, {
+      "outputs" : [ {
+        "id" : "438be5ef-b4f4-4ffa-bd4b-eca8af89687f",
+        "app_data" : {
+          "datastage" : {
+            "is_source_of_link" : "46e561ef-6362-43ea-9371-bc440c0d844f"
+          },
+          "ui_data" : {
+            "label" : "outPort",
+            "cardinality" : {
+              "min" : 0,
+              "max" : -1
+            }
+          },
+          "additionalProperties" : { }
+        },
+        "schema_ref" : "98dd9215-bd15-4fcb-a6d1-477a8602a994",
+        "parameters" : { }
+      } ],
+      "op" : "PxPeek",
+      "inputs" : [ {
+        "links" : [ {
+          "node_id_ref" : "17da14d1-3d74-456f-b613-41c89e4aaee6",
+          "type_attr" : "PRIMARY",
+          "id" : "90a7eb42-cb18-4f83-b9fb-76dfe4d8747f",
+          "link_name" : "Link_1",
+          "app_data" : {
+            "datastage" : { },
+            "ui_data" : {
+              "decorations" : [ ],
+              "class_name" : ""
+            }
+          },
+          "port_id_ref" : "b7ece432-9f6b-4dff-961e-b478c149207b"
+        } ],
+        "id" : "c8e2ce65-0607-4685-aad4-284b7c6ea4a5",
+        "app_data" : {
+          "ui_data" : {
+            "label" : ""
+          }
+        },
+        "schema_ref" : "e91c3b93-c24d-46d8-90e5-6ffd8fe02463",
+        "parameters" : {
+          "runtime_column_propagation" : false
+        }
+      } ],
+      "id" : "f6f5c0e0-424e-4329-a615-ed7dbe6c261e",
+      "type" : "execution_node",
+      "app_data" : {
+        "ui_data" : {
+          "image" : "/data-intg/flows/graphics/palette/PxPeek.svg",
+          "resize_height" : 48.0,
+          "is_resized" : true,
+          "x_pos" : 304.0,
+          "label" : "Peek_1",
+          "y_pos" : 400.0,
+          "resize_width" : 48.0
+        }
+      },
+      "parameters" : {
+        "currentOutputLinkType" : "PRIMARY",
+        "part" : [ ],
+        "buf_free_run" : 50,
+        "outputAcpShouldHide" : true,
+        "enableFlowAcpControl" : true,
+        "enableSchemalessDesign" : false,
+        "disk_write_inc" : 1048576,
+        "OutputlinkOrderingList" : [ {
+          "link_label" : "Output 1",
+          "link_name" : "Link_2"
+        } ],
+        "field" : [ ],
+        "selection" : " ",
+        "output_count" : 1,
+        "input_count" : 1,
+        "queue_upper_size" : 0,
+        "max_mem_buf_size" : 3145728,
+        "runtime_column_propagation" : false
+      }
+    }, {
+      "outputs" : [ {
+        "id" : "3ce04fb5-bd55-4e21-9686-da8f4ad87688",
+        "app_data" : {
+          "datastage" : {
+            "is_source_of_link" : "f645b82b-2cf1-4528-a908-cb67c1b1a336"
+          },
+          "ui_data" : {
+            "label" : "outPort",
+            "cardinality" : {
+              "min" : 1,
+              "max" : -1
+            }
+          },
+          "additionalProperties" : { }
+        },
+        "schema_ref" : "f00c3aa4-ef9d-476f-9624-e5cef8d2936e",
+        "parameters" : { }
+      } ],
+      "op" : "PxFilter",
+      "inputs" : [ {
+        "links" : [ {
+          "node_id_ref" : "f6f5c0e0-424e-4329-a615-ed7dbe6c261e",
+          "type_attr" : "PRIMARY",
+          "id" : "46e561ef-6362-43ea-9371-bc440c0d844f",
+          "link_name" : "Link_2",
+          "app_data" : {
+            "datastage" : { },
+            "ui_data" : {
+              "decorations" : [ ],
+              "class_name" : ""
+            }
+          },
+          "port_id_ref" : "438be5ef-b4f4-4ffa-bd4b-eca8af89687f"
+        } ],
+        "id" : "fb1d3ff8-f7f6-410d-9d95-142529904c34",
+        "app_data" : {
+          "ui_data" : {
+            "label" : ""
+          }
+        },
+        "schema_ref" : "98dd9215-bd15-4fcb-a6d1-477a8602a994",
+        "parameters" : {
+          "runtime_column_propagation" : false
+        }
+      } ],
+      "id" : "71a501a4-9c06-4850-827c-43b10aa1c52a",
+      "type" : "execution_node",
+      "app_data" : {
+        "ui_data" : {
+          "image" : "/data-intg/flows/graphics/palette/PxFilter.svg",
+          "resize_height" : 48.0,
+          "is_resized" : true,
+          "x_pos" : 552.0,
+          "label" : "Filter_1",
+          "y_pos" : 400.0,
+          "resize_width" : 48.0
+        }
+      },
+      "parameters" : {
+        "currentOutputLinkType" : "PRIMARY",
+        "showPartType" : true,
+        "whereProperties" : [ {
+          "where" : "amount > 99",
+          "target" : "0"
+        } ],
+        "showCollType" : false,
+        "buf_free_run" : 50,
+        "outputAcpShouldHide" : true,
+        "enableFlowAcpControl" : true,
+        "enableSchemalessDesign" : false,
+        "disk_write_inc" : 1048576,
+        "showSortOptions" : false,
+        "output_count" : 1,
+        "input_count" : 1,
+        "queue_upper_size" : 0,
+        "max_mem_buf_size" : 3145728
+      }
+    }, {
+      "outputs" : [ {
+        "id" : "3568a898-af19-4c21-8637-68248fc763cf",
+        "app_data" : {
+          "datastage" : {
+            "is_source_of_link" : "1443f116-45a4-4505-b614-a8143c17b0fc"
+          },
+          "ui_data" : {
+            "label" : "outPort",
+            "cardinality" : {
+              "min" : 1,
+              "max" : -1
+            }
+          },
+          "additionalProperties" : { }
+        },
+        "schema_ref" : "50c66119-4659-4e0f-b86b-461d9a3b7b70",
+        "parameters" : { }
+      }, {
+        "id" : "7a072e3c-add4-4b02-bda8-6d8da73a6f7d",
+        "app_data" : {
+          "datastage" : {
+            "is_source_of_link" : "18e1176f-a475-4ccf-a5bc-b71c314f11a9"
+          },
+          "ui_data" : {
+            "label" : "outPort",
+            "cardinality" : {
+              "min" : 1,
+              "max" : -1
+            }
+          },
+          "additionalProperties" : { }
+        },
+        "schema_ref" : "8bba5d06-9517-409f-9e0d-c6136aca3b00",
+        "parameters" : { }
+      } ],
+      "op" : "CTransformerStage",
+      "inputs" : [ {
+        "links" : [ {
+          "node_id_ref" : "71a501a4-9c06-4850-827c-43b10aa1c52a",
+          "type_attr" : "PRIMARY",
+          "id" : "f645b82b-2cf1-4528-a908-cb67c1b1a336",
+          "link_name" : "Link_3",
+          "app_data" : {
+            "datastage" : { },
+            "ui_data" : {
+              "decorations" : [ ],
+              "class_name" : ""
+            }
+          },
+          "port_id_ref" : "3ce04fb5-bd55-4e21-9686-da8f4ad87688"
+        } ],
+        "id" : "37ce14fe-c1fe-4696-ba4d-9e869ce76ad9",
+        "app_data" : {
+          "ui_data" : {
+            "label" : ""
+          }
+        },
+        "schema_ref" : "f00c3aa4-ef9d-476f-9624-e5cef8d2936e",
+        "parameters" : {
+          "runtime_column_propagation" : false
+        }
+      } ],
+      "id" : "f23f5f20-8c51-4dae-b98d-45b2af8d9ac8",
+      "type" : "execution_node",
+      "app_data" : {
+        "datastage" : {
+          "outputs_order" : "3568a898-af19-4c21-8637-68248fc763cf|7a072e3c-add4-4b02-bda8-6d8da73a6f7d"
+        },
+        "ui_data" : {
+          "image" : "/data-intg/flows/graphics/palette/CTransformerStage.svg",
+          "resize_height" : 48.0,
+          "is_resized" : true,
+          "x_pos" : 800.0,
+          "label" : "Transformer_1",
+          "y_pos" : 400.0,
+          "resize_width" : 48.0
+        }
+      },
+      "parameters" : {
+        "currentOutputLinkType" : "PRIMARY",
+        "output_count" : 2,
+        "input_count" : 1,
+        "buf_free_run" : 50,
+        "outputAcpShouldHide" : true,
+        "queue_upper_size" : 0,
+        "enableFlowAcpControl" : true,
+        "enableSchemalessDesign" : false,
+        "max_mem_buf_size" : 3145728,
+        "disk_write_inc" : 1048576
+      }
+    }, {
+      "op" : "mysql",
+      "inputs" : [ {
+        "links" : [ {
+          "node_id_ref" : "f23f5f20-8c51-4dae-b98d-45b2af8d9ac8",
+          "type_attr" : "PRIMARY",
+          "id" : "1443f116-45a4-4505-b614-a8143c17b0fc",
+          "link_name" : "Link_4",
+          "app_data" : {
+            "datastage" : { },
+            "ui_data" : {
+              "decorations" : [ ],
+              "class_name" : ""
+            }
+          },
+          "port_id_ref" : "3568a898-af19-4c21-8637-68248fc763cf"
+        } ],
+        "id" : "156959b0-bb1a-4ccd-bb8f-2b9e22a95b37",
+        "app_data" : {
+          "ui_data" : {
+            "label" : ""
+          }
+        },
+        "schema_ref" : "50c66119-4659-4e0f-b86b-461d9a3b7b70",
+        "parameters" : {
+          "runtime_column_propagation" : false
+        }
+      } ],
+      "connection" : {
+        "ref" : "local",
+        "name" : "MySQL Legacy Financial DB",
+        "app_data" : { },
+        "properties" : {
+          "currentOutputLinkType" : "PRIMARY",
+          "showPartType" : true,
+          "showCollType" : false,
+          "outputAcpShouldHide" : false,
+          "enableFlowAcpControl" : true,
+          "enableSchemalessDesign" : false,
+          "schema_name" : "TM_DS_DB_1",
+          "table_name" : "processed_transactions",
+          "ssl" : true,
+          "showSortOptions" : false,
+          "proxy" : false,
+          "database" : "TM_DS_DB_1",
+          "password" : "eDGxvzFX7tK_",
+          "output_count" : 0,
+          "port" : "32661",
+          "input_count" : 1,
+          "name" : "MySQL Legacy Financial DB",
+          "host" : "4d275b38-2eee-4b4d-8a88-cb022388e975.blijti4d0v0nkr55oei0.databases.appdomain.cloud",
+          "auto_column_propagation" : false,
+          "defer_credentials" : "false",
+          "username" : "TM_DS_USER"
+        }
+      },
+      "id" : "3046749f-dc43-469e-a540-b40f66963962",
+      "type" : "binding",
+      "app_data" : {
+        "ui_data" : {
+          "image" : "/data-intg/flows/graphics/palette/mysql.svg",
+          "resize_height" : 48.0,
+          "is_resized" : true,
+          "x_pos" : 1048.0,
+          "label" : "TM_DS_DB_1_1",
+          "y_pos" : 307.0,
+          "resize_width" : 48.0
+        }
+      },
+      "parameters" : {
+        "output_count" : 0,
+        "input_count" : 1,
+        "buf_free_run" : 50,
+        "queue_upper_size" : 0,
+        "max_mem_buf_size" : 3145728,
+        "disk_write_inc" : 1048576
+      }
+    }, {
+      "outputs" : [ {
+        "id" : "6295c798-e9c1-48ca-b9bb-99ee961f303c",
+        "app_data" : {
+          "datastage" : {
+            "is_source_of_link" : "40a3bbde-2de6-45b5-ac89-dfbc99af8fd3"
+          },
+          "ui_data" : {
+            "label" : "outPort",
+            "cardinality" : {
+              "min" : 0,
+              "max" : -1
+            }
+          },
+          "additionalProperties" : { }
+        },
+        "schema_ref" : "0f1b2063-949d-4c39-8764-6d1139a64ae4",
+        "parameters" : { }
+      } ],
+      "op" : "PxPeek",
+      "inputs" : [ {
+        "links" : [ {
+          "node_id_ref" : "f23f5f20-8c51-4dae-b98d-45b2af8d9ac8",
+          "type_attr" : "PRIMARY",
+          "id" : "18e1176f-a475-4ccf-a5bc-b71c314f11a9",
+          "link_name" : "Link_5",
+          "app_data" : {
+            "datastage" : { },
+            "ui_data" : {
+              "decorations" : [ ],
+              "class_name" : ""
+            }
+          },
+          "port_id_ref" : "7a072e3c-add4-4b02-bda8-6d8da73a6f7d"
+        } ],
+        "id" : "18253f1d-6462-4d89-845b-b7bc41315bd9",
+        "app_data" : {
+          "ui_data" : {
+            "label" : ""
+          }
+        },
+        "schema_ref" : "8bba5d06-9517-409f-9e0d-c6136aca3b00",
+        "parameters" : {
+          "runtime_column_propagation" : false
+        }
+      } ],
+      "id" : "bb6b241a-478a-420c-bf58-edc386759bad",
+      "type" : "execution_node",
+      "app_data" : {
+        "ui_data" : {
+          "image" : "/data-intg/flows/graphics/palette/PxPeek.svg",
+          "resize_height" : 48.0,
+          "is_resized" : true,
+          "x_pos" : 1048.0,
+          "label" : "Peek_2",
+          "y_pos" : 493.0,
+          "resize_width" : 48.0
+        }
+      },
+      "parameters" : {
+        "currentOutputLinkType" : "PRIMARY",
+        "part" : [ ],
+        "buf_free_run" : 50,
+        "outputAcpShouldHide" : true,
+        "enableFlowAcpControl" : true,
+        "enableSchemalessDesign" : false,
+        "disk_write_inc" : 1048576,
+        "OutputlinkOrderingList" : [ {
+          "link_label" : "Output 1",
+          "link_name" : "Link_6"
+        } ],
+        "field" : [ ],
+        "selection" : " ",
+        "output_count" : 1,
+        "input_count" : 1,
+        "queue_upper_size" : 0,
+        "max_mem_buf_size" : 3145728
+      }
+    }, {
+      "op" : "PxSequentialFile",
+      "inputs" : [ {
+        "links" : [ {
+          "node_id_ref" : "bb6b241a-478a-420c-bf58-edc386759bad",
+          "type_attr" : "PRIMARY",
+          "id" : "40a3bbde-2de6-45b5-ac89-dfbc99af8fd3",
+          "link_name" : "Link_6",
+          "app_data" : {
+            "datastage" : { },
+            "ui_data" : {
+              "decorations" : [ ],
+              "class_name" : ""
+            }
+          },
+          "port_id_ref" : "6295c798-e9c1-48ca-b9bb-99ee961f303c"
+        } ],
+        "id" : "645d8ff5-7691-4ce7-8fe6-553e65996452",
+        "app_data" : {
+          "ui_data" : {
+            "label" : ""
+          }
+        },
+        "schema_ref" : "0f1b2063-949d-4c39-8764-6d1139a64ae4",
+        "parameters" : {
+          "file" : [ "/ds-storage/low_value_transactions_20260218_110846.csv" ],
+          "firstLineColumnNames" : "firstLineColumnNames",
+          "runtime_column_propagation" : false
+        }
+      } ],
+      "id" : "10f49fb8-5ef9-4311-80b0-e6372f3fd3cb",
+      "type" : "binding",
+      "app_data" : {
+        "ui_data" : {
+          "image" : "/data-intg/flows/graphics/palette/PxSequentialFile.svg",
+          "resize_height" : 48.0,
+          "is_resized" : true,
+          "x_pos" : 1296.0,
+          "label" : "Sequential_file_1",
+          "y_pos" : 493.0,
+          "resize_width" : 48.0
+        }
+      },
+      "parameters" : {
+        "currentOutputLinkType" : "PRIMARY",
+        "showPartType" : false,
+        "null_field" : "'NULL'",
+        "firstLineColumnNames" : "firstLineColumnNames",
+        "showCollType" : true,
+        "buf_free_run" : 50,
+        "outputAcpShouldHide" : true,
+        "enableFlowAcpControl" : true,
+        "richfile +" : [ ],
+        "enableSchemalessDesign" : false,
+        "disk_write_inc" : 1048576,
+        "showSortOptions" : true,
+        "file +" : [ ],
+        "selection" : "file",
+        "output_count" : 0,
+        "input_count" : 1,
+        "queue_upper_size" : 0,
+        "max_mem_buf_size" : 3145728
+      }
+    } ],
+    "id" : "84b7378f-1ece-41fe-b8a2-6bf362e476ab",
+    "app_data" : {
+      "ui_data" : { }
+    },
+    "runtime_ref" : "pxOsh"
+  } ],
+  "external_paramsets" : [ ],
+  "json_schema" : "https://api.dataplatform.ibm.com/schemas/common-pipeline/pipeline-flow/pipeline-flow-v3-schema.json",
+  "schemas" : [ {
+    "id" : "e91c3b93-c24d-46d8-90e5-6ffd8fe02463",
+    "fields" : [ {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 100,
+        "description" : "",
+        "max_length" : 6,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "id",
+      "type" : "integer",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "INTEGER",
+        "type_code" : "INT32"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 100,
+        "description" : "",
+        "max_length" : 6,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "account_id",
+      "type" : "integer",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "INTEGER",
+        "type_code" : "INT32"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 100,
+        "description" : "",
+        "max_length" : 50,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "timestamp",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 2,
+        "decimal_precision" : 10,
+        "description" : "",
+        "max_length" : 10,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "amount",
+      "type" : "double",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "NUMERIC",
+        "type_code" : "DECIMAL"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 100,
+        "description" : "",
+        "max_length" : 1024,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "location",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "LONGVARCHAR",
+        "type_code" : "STRING"
+      }
+    } ]
+  }, {
+    "id" : "98dd9215-bd15-4fcb-a6d1-477a8602a994",
+    "fields" : [ {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 100,
+        "description" : "",
+        "source_field_id" : "Link_1.id",
+        "max_length" : 6,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "id",
+      "type" : "integer",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "INTEGER",
+        "type_code" : "INT32"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 100,
+        "description" : "",
+        "source_field_id" : "Link_1.account_id",
+        "max_length" : 6,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "account_id",
+      "type" : "integer",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "INTEGER",
+        "type_code" : "INT32"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 100,
+        "description" : "",
+        "source_field_id" : "Link_1.timestamp",
+        "max_length" : 50,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "timestamp",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 2,
+        "decimal_precision" : 10,
+        "description" : "",
+        "source_field_id" : "Link_1.amount",
+        "max_length" : 10,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "amount",
+      "type" : "double",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "NUMERIC",
+        "type_code" : "DECIMAL"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 100,
+        "description" : "",
+        "source_field_id" : "Link_1.location",
+        "max_length" : 1024,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "location",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "LONGVARCHAR",
+        "type_code" : "STRING"
+      }
+    } ]
+  }, {
+    "id" : "f00c3aa4-ef9d-476f-9624-e5cef8d2936e",
+    "fields" : [ {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 100,
+        "description" : "",
+        "source_field_id" : "Link_2.id",
+        "max_length" : 6,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "id",
+      "type" : "integer",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "INTEGER",
+        "type_code" : "INT32"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 100,
+        "description" : "",
+        "source_field_id" : "Link_2.account_id",
+        "max_length" : 6,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "account_id",
+      "type" : "integer",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "INTEGER",
+        "type_code" : "INT32"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 100,
+        "description" : "",
+        "source_field_id" : "Link_2.timestamp",
+        "max_length" : 50,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "timestamp",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 2,
+        "decimal_precision" : 10,
+        "description" : "",
+        "source_field_id" : "Link_2.amount",
+        "max_length" : 10,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "amount",
+      "type" : "double",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "NUMERIC",
+        "type_code" : "DECIMAL"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 100,
+        "description" : "",
+        "source_field_id" : "Link_2.location",
+        "max_length" : 1024,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "location",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "LONGVARCHAR",
+        "type_code" : "STRING"
+      }
+    } ]
+  }, {
+    "id" : "50c66119-4659-4e0f-b86b-461d9a3b7b70",
+    "fields" : [ {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 100,
+        "description" : "",
+        "source_field_id" : "Link_3.account_id",
+        "max_length" : 6,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "account_id",
+      "type" : "integer",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "INTEGER",
+        "type_code" : "INT32"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 100,
+        "description" : "",
+        "source_field_id" : "Link_3.timestamp",
+        "max_length" : 50,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "timestamp",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 2,
+        "decimal_precision" : 10,
+        "description" : "",
+        "source_field_id" : "Link_3.amount",
+        "max_length" : 10,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "amount",
+      "type" : "double",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "NUMERIC",
+        "type_code" : "DECIMAL"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 100,
+        "description" : "",
+        "source_field_id" : "Link_3.location",
+        "max_length" : 1024,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "location",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "LONGVARCHAR",
+        "type_code" : "STRING"
+      }
+    } ]
+  }, {
+    "id" : "8bba5d06-9517-409f-9e0d-c6136aca3b00",
+    "fields" : [ {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 100,
+        "description" : "",
+        "source_field_id" : "Link_3.id",
+        "max_length" : 6,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "id",
+      "type" : "integer",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "INTEGER",
+        "type_code" : "INT32"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 100,
+        "description" : "",
+        "source_field_id" : "Link_3.account_id",
+        "max_length" : 6,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "account_id",
+      "type" : "integer",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "INTEGER",
+        "type_code" : "INT32"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 100,
+        "description" : "",
+        "source_field_id" : "Link_3.timestamp",
+        "max_length" : 50,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "timestamp",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 2,
+        "decimal_precision" : 10,
+        "description" : "",
+        "source_field_id" : "Link_3.amount",
+        "max_length" : 10,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "amount",
+      "type" : "double",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "NUMERIC",
+        "type_code" : "DECIMAL"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 100,
+        "description" : "",
+        "source_field_id" : "Link_3.location",
+        "max_length" : 1024,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "location",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "LONGVARCHAR",
+        "type_code" : "STRING"
+      }
+    } ]
+  }, {
+    "id" : "0f1b2063-949d-4c39-8764-6d1139a64ae4",
+    "fields" : [ {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 100,
+        "description" : "",
+        "source_field_id" : "Link_5.id",
+        "max_length" : 6,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "id",
+      "type" : "integer",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "INTEGER",
+        "type_code" : "INT32"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 100,
+        "description" : "",
+        "source_field_id" : "Link_5.account_id",
+        "max_length" : 6,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "account_id",
+      "type" : "integer",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "INTEGER",
+        "type_code" : "INT32"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 100,
+        "description" : "",
+        "source_field_id" : "Link_5.timestamp",
+        "max_length" : 50,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "timestamp",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "VARCHAR",
+        "type_code" : "STRING"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 2,
+        "decimal_precision" : 10,
+        "description" : "",
+        "source_field_id" : "Link_5.amount",
+        "max_length" : 10,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "amount",
+      "type" : "double",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "NUMERIC",
+        "type_code" : "DECIMAL"
+      }
+    }, {
+      "metadata" : {
+        "item_index" : 0,
+        "is_key" : false,
+        "min_length" : 0,
+        "decimal_scale" : 0,
+        "decimal_precision" : 100,
+        "description" : "",
+        "source_field_id" : "Link_5.location",
+        "max_length" : 1024,
+        "is_signed" : true
+      },
+      "nullable" : false,
+      "name" : "location",
+      "type" : "string",
+      "app_data" : {
+        "time_scale" : 0,
+        "odbc_type" : "LONGVARCHAR",
+        "type_code" : "STRING"
+      }
+    } ]
+  } ],
+  "doc_type" : "pipeline",
+  "id" : "6486edeb-e57e-406d-bfc8-18a4d778b3f0",
+  "app_data" : {
+    "additionalProperties" : {
+      "globalAcp" : true
+    }
+  },
+  "version" : "3.0",
+  "parameters" : {
+    "local_parameters" : [ ]
+  }
+}

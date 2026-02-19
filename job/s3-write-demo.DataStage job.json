@@ -1,0 +1,35 @@
+{
+  "metadata" : {
+    "name" : "s3-write-demo.DataStage job",
+    "asset_id" : "d5580130-53a7-4c83-843d-17e5be061235",
+    "owner_id" : "1000331001",
+    "version" : 0
+  },
+  "entity" : {
+    "job" : {
+      "asset_ref" : "6f695bcf-8cd5-4be1-9239-ccbc4588bee6",
+      "schedule_id" : "",
+      "project_name" : "mdproject",
+      "configuration" : {
+        "env_id" : "679e56eb-b822-46ba-a91a-efc454201af4",
+        "env_type" : "datastage",
+        "flow_limits" : {
+          "warn_limit" : 100
+        },
+        "env_variables" : [ ],
+        "runPriorityQueue" : "Medium"
+      },
+      "last_run_time" : "deprecated field",
+      "asset_ref_type" : "data_intg_flow",
+      "job_parameters" : [ ],
+      "last_run_status" : "deprecated field",
+      "retention_policy" : { },
+      "last_run_initiator" : "deprecated field",
+      "schedule_creator_id" : "",
+      "enable_notifications" : true,
+      "future_scheduled_runs" : [ ],
+      "last_run_status_timestamp" : 0,
+      "flow_name" : "s3-write-demo"
+    }
+  }
+}

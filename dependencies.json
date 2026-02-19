@@ -1,0 +1,66 @@
+{
+  "data_intg_flow" : {
+    "Data Integration" : [ {
+      "id" : "0f8685a7-a53c-4041-a8ba-3ff76ee9f97a",
+      "name" : "Data Fabric Trial - Db2 Warehouse",
+      "asset_type" : "connection"
+    } ],
+    "TransactionsLowValue-SDK-CP4D" : [ ],
+    "datastage_flow1" : [ ],
+    "datastage_flow2" : [ ],
+    "parquet-source-table-demo" : [ {
+      "id" : "fb27f466-33bf-4830-bd3f-5274f9843ef3",
+      "name" : "aws_keys",
+      "asset_type" : "parameter_set"
+    } ],
+    "s3-write-demo" : [ {
+      "id" : "fb27f466-33bf-4830-bd3f-5274f9843ef3",
+      "name" : "aws_keys",
+      "asset_type" : "parameter_set"
+    } ],
+    "test" : [ ]
+  },
+  "orchestration_flow" : { },
+  "data_intg_subflow" : { },
+  "job" : {
+    "Data Integration.DataStage job" : [ {
+      "id" : "7946f29d-584e-4b24-8eef-ef22acc60971",
+      "name" : "Data Integration",
+      "asset_type" : "data_intg_flow"
+    } ],
+    "datastage_flow1.DataStage job" : [ {
+      "id" : "c1202dc9-e8e4-4154-9e33-b6259f324a48",
+      "name" : "datastage_flow1",
+      "asset_type" : "data_intg_flow"
+    } ],
+    "datastage_flow2.DataStage job" : [ {
+      "id" : "c768949e-3c90-46ed-83c7-4d8941ca530d",
+      "name" : "datastage_flow2",
+      "asset_type" : "data_intg_flow"
+    } ],
+    "parquet-source-table-demo.DataStage job" : [ {
+      "id" : "ae164b8f-ff8e-4e70-82d9-43bb42cdc2e2",
+      "name" : "parquet-source-table-demo",
+      "asset_type" : "data_intg_flow"
+    } ],
+    "pipeline_1.DataStage sequence job" : [ {
+      "id" : "dfbade3d-b629-45a0-ac31-b411058a1b46",
+      "name" : "pipeline_1"
+    } ],
+    "pipeline_1_normal" : [ {
+      "id" : "dfbade3d-b629-45a0-ac31-b411058a1b46",
+      "name" : "pipeline_1"
+    } ],
+    "pipeline_1_optimized" : [ {
+      "id" : "dfbade3d-b629-45a0-ac31-b411058a1b46",
+      "name" : "pipeline_1"
+    } ],
+    "s3-write-demo.DataStage job" : [ {
+      "id" : "6f695bcf-8cd5-4be1-9239-ccbc4588bee6",
+      "name" : "s3-write-demo",
+      "asset_type" : "data_intg_flow"
+    } ]
+  },
+  "data_intg_parallel_function" : { },
+  "data_intg_custom_stage" : { }
+}

@@ -1,0 +1,61 @@
+{
+  "project" : {
+    "jobNameSuffix" : ".DataStage job",
+    "runEnvironmentId" : "",
+    "runPriorityQueue" : "Medium",
+    "runRemoteEngineEnforcement" : false,
+    "testDataProperties" : {
+      "testCaseJobNameSuffix" : ".DataStageTestCase Job",
+      "testDataConnectionType" : ""
+    },
+    "saveFrequency" : "save_changes_automatically",
+    "formatTimeString" : "%hh:%nn:%ss",
+    "flowLimits" : {
+      "warnLimit" : 100
+    },
+    "testDataConnectionId" : "",
+    "nlsCollate" : "OFF",
+    "disableParamsRefreshCache" : false,
+    "runMessageHandlerId" : "",
+    "formatDecimalSeparator" : ".",
+    "testDataBasePath" : "",
+    "allowDuplicate" : false,
+    "sequenceNameSuffix" : ".DataStage sequence",
+    "defineParameters" : false,
+    "optimizedSequenceNameSuffix" : ".DataStage sequence job",
+    "runIsolatedEngineEnforcement" : false,
+    "runArtifactRetention" : {
+      "enabled" : false
+    },
+    "aiFeatures" : {
+      "enableDSAssistant" : false
+    },
+    "gitIntegration" : {
+      "gitCertKey" : "{dsnextenc}88l29SqgcBu37qt0M5vz/Q==",
+      "enableGit" : true,
+      "gitProvider" : "git",
+      "gitCert" : "",
+      "gitFolder" : "",
+      "gitToken" : "{dsnextenc}VKjb8YjlwxdxP0CGos44HTs+bg++lgzWcJT/aPH7yB75LVhYUZo6gLmANSXLsMD7",
+      "gitOwner" : "",
+      "dsUser" : "",
+      "gitURL" : "https://github.com/mwdobson3/test.git",
+      "gitBranch" : "main"
+    },
+    "thresholdLimits" : { },
+    "formatDateString" : "%yyyy-%mm-%dd",
+    "flowAcpControl" : true,
+    "metricsRepository" : {
+      "enableMetrics" : false,
+      "metricsRetention" : {
+        "enabled" : false
+      },
+      "connection" : {
+        "datasource_type" : "e1c23729-99d8-4407-b3df-336e33ffdc82"
+      },
+      "enableAdvancedFind" : false
+    },
+    "nlsMap" : "UTF-8",
+    "formatTimestampString" : "%yyyy-%mm-%dd %hh:%nn:%ss"
+  }
+}

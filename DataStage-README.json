@@ -1,0 +1,121 @@
+{
+  "project" : "mdproject",
+  "projectId" : "20fa94ae-1d43-4334-bbf9-8e9b2d57892b",
+  "created_by" : "cpadmin",
+  "environment" : "cp4d",
+  "services_info" : [ {
+    "name" : "ds-canvas",
+    "version" : "531.0.25"
+  }, {
+    "name" : "ds-cas-lite",
+    "version" : "531.0.4"
+  }, {
+    "name" : "ds-codegen",
+    "version" : "531.0.14"
+  }, {
+    "name" : "ds-flow-runtime",
+    "version" : "531.0.5"
+  }, {
+    "name" : "ds-flows",
+    "version" : "531.0.14"
+  }, {
+    "name" : "ds-migration",
+    "version" : "531.0.6"
+  }, {
+    "name" : "ds-px-runtime",
+    "version" : "531.0.11"
+  }, {
+    "name" : "DSAssets",
+    "version" : "531.0.4"
+  }, {
+    "name" : "qs-ruleset",
+    "version" : "531.0.4"
+  } ],
+  "assets" : [ {
+    "name" : "datastage_flow1",
+    "type" : "data_intg_flow"
+  }, {
+    "name" : "pipeline_1_optimized",
+    "type" : "job"
+  }, {
+    "name" : "s3-write-demo",
+    "type" : "data_intg_flow"
+  }, {
+    "name" : "Data Integration",
+    "type" : "data_intg_flow"
+  }, {
+    "name" : "datastage_flow2",
+    "type" : "data_intg_flow"
+  }, {
+    "name" : "datastage_flow1",
+    "type" : "px_executables",
+    "location" : "datastage_flow1"
+  }, {
+    "name" : "parquet-source-table-demo",
+    "type" : "data_intg_flow"
+  }, {
+    "name" : "s3-write-demo",
+    "type" : "px_executables",
+    "location" : "s3-write-demo"
+  }, {
+    "name" : "20fa94ae-1d43-4334-bbf9-8e9b2d57892b-DataStage_settings",
+    "type" : "data_intg_project_settings"
+  }, {
+    "name" : "datastage_flow1.DataStage job",
+    "type" : "job"
+  }, {
+    "name" : "MORTGAGE_DATA.CSV",
+    "type" : "data_asset"
+  }, {
+    "name" : "default_datastage_px",
+    "type" : "environment"
+  }, {
+    "name" : "Data Fabric Trial - Databases for PostgreSQL",
+    "type" : "connection"
+  }, {
+    "name" : "test",
+    "type" : "data_intg_flow"
+  }, {
+    "name" : "pipeline_1_normal",
+    "type" : "job"
+  }, {
+    "name" : "parquet-source-table-demo.DataStage job",
+    "type" : "job"
+  }, {
+    "name" : "Data Fabric Trial - Db2 Warehouse",
+    "type" : "connection"
+  }, {
+    "name" : "pipeline_1.DataStage sequence job",
+    "type" : "job"
+  }, {
+    "name" : "pipeline_1",
+    "type" : "orchestration_flow"
+  }, {
+    "name" : "Data Fabric Trial - Mongo DB",
+    "type" : "connection"
+  }, {
+    "name" : "s3-write-demo.DataStage job",
+    "type" : "job"
+  }, {
+    "name" : "datastage_flow2.DataStage job",
+    "type" : "job"
+  }, {
+    "name" : "Data Integration.DataStage job",
+    "type" : "job"
+  }, {
+    "name" : "TransactionsLowValue-SDK-CP4D",
+    "type" : "data_intg_flow"
+  }, {
+    "name" : "aws_keys",
+    "type" : "parameter_set"
+  } ],
+  "flow_job_mapping" : [ {
+    "flow" : "datastage_flow1",
+    "job" : "datastage_flow1.DataStage job",
+    "type" : "data_intg_flow"
+  }, {
+    "flow" : "datastage_flow2",
+    "job" : "datastage_flow2.DataStage job",
+    "type" : "data_intg_flow"
+  } ]
+}

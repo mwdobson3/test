@@ -1,0 +1,35 @@
+{
+  "metadata" : {
+    "name" : "Data Integration.DataStage job",
+    "asset_id" : "f270b706-f656-4ed5-b710-ade0baf41f96",
+    "owner_id" : "1000331001",
+    "version" : 0
+  },
+  "entity" : {
+    "job" : {
+      "asset_ref" : "7946f29d-584e-4b24-8eef-ef22acc60971",
+      "schedule_id" : "",
+      "project_name" : "mdproject",
+      "configuration" : {
+        "env_id" : "f1bc064f-37e8-473b-83c2-c2a8453d090f",
+        "env_type" : "datastage",
+        "flow_limits" : {
+          "warn_limit" : 100
+        },
+        "env_variables" : [ ],
+        "runPriorityQueue" : "Medium"
+      },
+      "last_run_time" : "deprecated field",
+      "asset_ref_type" : "data_intg_flow",
+      "parameter_sets" : [ ],
+      "last_run_status" : "deprecated field",
+      "data_assets_array" : [ "/ds-storage/PXRuntime/Projects/20fa94ae-1d43-4334-bbf9-8e9b2d57892b/MORTGAGE_DATA.CSV=MORTGAGE_DATA.CSV=2122aaa2-3506-4334-9690-13002d219d53" ],
+      "last_run_initiator" : "deprecated field",
+      "schedule_creator_id" : "",
+      "enable_notifications" : true,
+      "future_scheduled_runs" : [ ],
+      "last_run_status_timestamp" : 0,
+      "flow_name" : "Data Integration"
+    }
+  }
+}

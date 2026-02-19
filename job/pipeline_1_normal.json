@@ -1,0 +1,31 @@
+{
+  "metadata" : {
+    "name" : "pipeline_1_normal",
+    "description" : "",
+    "asset_id" : "4f6fffc1-0712-4130-b100-71197859341d",
+    "owner_id" : "1000331001",
+    "version" : 0
+  },
+  "entity" : {
+    "job" : {
+      "asset_ref" : "dfbade3d-b629-45a0-ac31-b411058a1b46",
+      "schedule_id" : "",
+      "project_name" : "mdproject",
+      "configuration" : {
+        "version" : "dfbade3d-b629-45a0-ac31-b411058a1b46-0",
+        "env_type" : "",
+        "env_variables" : [ ]
+      },
+      "last_run_time" : "deprecated field",
+      "asset_ref_type" : "orchestration_flow",
+      "last_run_status" : "deprecated field",
+      "last_run_initiator" : "deprecated field",
+      "hide_run_ui_display" : false,
+      "schedule_creator_id" : "",
+      "enable_notifications" : true,
+      "future_scheduled_runs" : [ ],
+      "last_run_status_timestamp" : 0,
+      "flow_name" : "pipeline_1"
+    }
+  }
+}

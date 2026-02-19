@@ -1,0 +1,33 @@
+{
+  "metadata" : {
+    "name" : "parquet-source-table-demo.DataStage job",
+    "asset_id" : "a23f2072-db9e-4ad3-ab39-26507b864044",
+    "owner_id" : "1000331001",
+    "version" : 0
+  },
+  "entity" : {
+    "job" : {
+      "asset_ref" : "ae164b8f-ff8e-4e70-82d9-43bb42cdc2e2",
+      "schedule_id" : "",
+      "project_name" : "mdproject",
+      "configuration" : {
+        "env_id" : "679e56eb-b822-46ba-a91a-efc454201af4",
+        "env_type" : "datastage",
+        "flow_limits" : {
+          "warn_limit" : 100
+        },
+        "env_variables" : [ ],
+        "runPriorityQueue" : "Medium"
+      },
+      "last_run_time" : "deprecated field",
+      "asset_ref_type" : "data_intg_flow",
+      "last_run_status" : "deprecated field",
+      "last_run_initiator" : "deprecated field",
+      "schedule_creator_id" : "",
+      "enable_notifications" : true,
+      "future_scheduled_runs" : [ ],
+      "last_run_status_timestamp" : 0,
+      "flow_name" : "parquet-source-table-demo"
+    }
+  }
+}
