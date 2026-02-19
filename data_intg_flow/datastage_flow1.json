@@ -33,7 +33,7 @@
         "ui_data" : {
           "image" : "/data-intg/flows/graphics/palette/PxRowGenerator.svg",
           "x_pos" : 348.48,
-          "label" : "Row_Generator_1",
+          "label" : "TESTROWGEN",
           "y_pos" : 158.4
         }
       },
