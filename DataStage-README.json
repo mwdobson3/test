@@ -70,8 +70,14 @@
     "name" : "default_datastage_px",
     "type" : "environment"
   }, {
+    "name" : "REST_JSON_demo.DataStage job",
+    "type" : "job"
+  }, {
     "name" : "Data Fabric Trial - Databases for PostgreSQL",
     "type" : "connection"
+  }, {
+    "name" : "weather",
+    "type" : "ds_xml_schema_library"
   }, {
     "name" : "test",
     "type" : "data_intg_flow"
@@ -81,6 +87,9 @@
   }, {
     "name" : "test.DataStage job",
     "type" : "job"
+  }, {
+    "name" : "REST_JSON_demo",
+    "type" : "data_intg_flow"
   }, {
     "name" : "parquet-source-table-demo.DataStage job",
     "type" : "job"

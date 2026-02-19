@@ -10,12 +10,12 @@
     "iam_id" : "",
     "git_user" : "mwdobson3"
   },
-  "commit-time" : "2026-02-19T03:30:56Z",
-  "commit-sha" : "73d6616144838167a247a23583f579ed7d4b1e11",
+  "commit-time" : "2026-02-19T04:50:17Z",
+  "commit-sha" : "6d279db93f06299de1f127fc1a0a3961d379773d",
   "readme" : {
     "name" : "DataStage-README.json",
-    "sha" : "2d90705d704f7a0a9be96082cb3a57818fea9d39",
-    "size" : 3041,
+    "sha" : "26fe9ee299201bbde1709dbcf7ee4d2309b3f9f2",
+    "size" : 3248,
     "asset_type" : "readme",
     "resource_key" : "",
     "iam_id" : "",
@@ -28,6 +28,18 @@
       "sha" : "c11c0c2b309a873cf91b2bfa0ccddf4bfcd9ae9f",
       "size" : 76550,
       "updated_at" : "2026-02-18T14:09:11Z",
+      "asset_type" : "data_intg_flow",
+      "resource_key" : "",
+      "iam_id" : "1000331001",
+      "user_name" : "cpadmin",
+      "git_user" : "mwdobson3"
+    },
+    "REST_JSON_demo" : {
+      "id" : "90d3e585-089c-4038-b189-83e63d5d5df1",
+      "name" : "REST_JSON_demo",
+      "sha" : "925c62577a9ccad95312fb46e38c3dec7732857c",
+      "size" : 47011,
+      "updated_at" : "2026-02-19T16:13:52Z",
       "asset_type" : "data_intg_flow",
       "resource_key" : "",
       "iam_id" : "1000331001",
@@ -128,6 +140,18 @@
       "sha" : "b460a172b724407d4a7236516a3af88bfa09c0d3",
       "size" : 1176,
       "updated_at" : "2026-02-18T14:09:11Z",
+      "asset_type" : "job",
+      "resource_key" : "",
+      "iam_id" : "1000331001",
+      "user_name" : "cpadmin",
+      "git_user" : "mwdobson3"
+    },
+    "REST_JSON_demo.DataStage job" : {
+      "id" : "4ebdb386-4ddb-4cef-a69b-3411469f9b61",
+      "name" : "REST_JSON_demo.DataStage job",
+      "sha" : "ac86fa440440d76e31949c7074f1de0c1cced7d2",
+      "size" : 928,
+      "updated_at" : "2026-02-19T15:21:58Z",
       "asset_type" : "job",
       "resource_key" : "",
       "iam_id" : "1000331001",
@@ -291,7 +315,21 @@
   "ds_match_specification" : { },
   "data_intg_parallel_function" : { },
   "data_intg_java_library" : { },
-  "ds_xml_schema_library" : { },
+  "ds_xml_schema_library" : {
+    "weather" : {
+      "id" : "99fde468-6113-45b7-b04f-3cef92e22d8b",
+      "name" : "weather",
+      "sha" : "d15e93d53bd6645ff139d53c3f2d96507134672a",
+      "size" : 8206,
+      "created_at" : "2026-02-19T14:46:27Z",
+      "updated_at" : "1771512509547",
+      "asset_type" : "ds_xml_schema_library",
+      "resource_key" : "ds_xml_schema_library/weather",
+      "iam_id" : "1000331001",
+      "user_name" : "cpadmin",
+      "git_user" : "mwdobson3"
+    }
+  },
   "data_asset" : {
     "MORTGAGE_DATA.CSV" : {
       "id" : "2122aaa2-3506-4334-9690-13002d219d53",

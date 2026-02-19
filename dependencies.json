@@ -5,6 +5,10 @@
       "name" : "Data Fabric Trial - Db2 Warehouse",
       "asset_type" : "connection"
     } ],
+    "REST_JSON_demo" : [ {
+      "id" : "99fde468-6113-45b7-b04f-3cef92e22d8b",
+      "name" : "weather"
+    } ],
     "TransactionsLowValue-SDK-CP4D" : [ ],
     "datastage_flow1" : [ ],
     "datastage_flow2" : [ ],
@@ -26,6 +30,11 @@
     "Data Integration.DataStage job" : [ {
       "id" : "7946f29d-584e-4b24-8eef-ef22acc60971",
       "name" : "Data Integration",
+      "asset_type" : "data_intg_flow"
+    } ],
+    "REST_JSON_demo.DataStage job" : [ {
+      "id" : "90d3e585-089c-4038-b189-83e63d5d5df1",
+      "name" : "REST_JSON_demo",
       "asset_type" : "data_intg_flow"
     } ],
     "datastage_flow1.DataStage job" : [ {
