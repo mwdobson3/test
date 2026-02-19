@@ -59,6 +59,11 @@
       "id" : "6f695bcf-8cd5-4be1-9239-ccbc4588bee6",
       "name" : "s3-write-demo",
       "asset_type" : "data_intg_flow"
+    } ],
+    "test.DataStage job" : [ {
+      "id" : "80e00bab-63c2-4eb5-ae72-092c42065936",
+      "name" : "test",
+      "asset_type" : "data_intg_flow"
     } ]
   },
   "data_intg_parallel_function" : { },

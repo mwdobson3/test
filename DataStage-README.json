@@ -79,6 +79,9 @@
     "name" : "pipeline_1_normal",
     "type" : "job"
   }, {
+    "name" : "test.DataStage job",
+    "type" : "job"
+  }, {
     "name" : "parquet-source-table-demo.DataStage job",
     "type" : "job"
   }, {
@@ -87,6 +90,10 @@
   }, {
     "name" : "pipeline_1.DataStage sequence job",
     "type" : "job"
+  }, {
+    "name" : "test",
+    "type" : "px_executables",
+    "location" : "test"
   }, {
     "name" : "pipeline_1",
     "type" : "orchestration_flow"

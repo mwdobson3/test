@@ -1,0 +1,33 @@
+{
+  "metadata" : {
+    "name" : "test.DataStage job",
+    "asset_id" : "9ba0bc40-7d69-4e1d-a096-c22fbb02f44d",
+    "owner_id" : "1000331001",
+    "version" : 0
+  },
+  "entity" : {
+    "job" : {
+      "asset_ref" : "80e00bab-63c2-4eb5-ae72-092c42065936",
+      "schedule_id" : "",
+      "project_name" : "mdproject",
+      "configuration" : {
+        "env_type" : "",
+        "flow_limits" : {
+          "warn_limit" : 100
+        },
+        "env_variables" : [ ],
+        "runPriorityQueue" : "Medium"
+      },
+      "last_run_time" : "deprecated field",
+      "asset_ref_type" : "data_intg_flow",
+      "parameter_sets" : [ ],
+      "last_run_status" : "deprecated field",
+      "last_run_initiator" : "deprecated field",
+      "schedule_creator_id" : "",
+      "enable_notifications" : true,
+      "future_scheduled_runs" : [ ],
+      "last_run_status_timestamp" : 0,
+      "flow_name" : "test"
+    }
+  }
+}
